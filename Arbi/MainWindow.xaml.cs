@@ -151,26 +151,51 @@ namespace Arbi
                     break;
             }
 
+            int numOfReps = 0;
             // This decides the next activty.
-            int nextActivityI = new Random().Next(4);
-            int numOfReps = new Random().Next(5, 31);
+            if (currentScore <= 5)
+            {
+                numOfReps = new Random().Next(1, 21);
+            }
+            else if (currentScore > 5 && currentScore <= 10)
+            {
+                numOfReps = new Random().Next(5, 31);
+            }
+            else if (currentScore > 10 && currentScore <= 20)
+            {
+                numOfReps = new Random().Next(10, 41);
+            }
+            else if (currentScore > 20 && currentScore <= 30)
+            {
+                numOfReps = new Random().Next(20, 51);
+            }
+            else if (currentScore > 30)
+            {
+                numOfReps = new Random().Next(50, 101);
+            }
+
+            int nextActivityI = new Random().Next(5);
             switch(nextActivityI)
             {
                 case 0:
-                    taskTB.Content = $@"Do Crunches - {numOfReps}x";
+                    taskTB.Content = $@"Do Crunches - x{numOfReps}";
                     svgMain.Source = new Uri(@"pack://application:,,,/assets/exerciseIcons/crunches.svg");
                     break;
                 case 1:
-                    taskTB.Content = $@"Do Leg Raises - {numOfReps}x";
+                    taskTB.Content = $@"Do Leg Raises - x{numOfReps}";
                     svgMain.Source = new Uri(@"pack://application:,,,/assets/exerciseIcons/legRaises.svg");
                     break;
                 case 2:
-                    taskTB.Content = $@"Do Lunges - {numOfReps}x";
+                    taskTB.Content = $@"Do Lunges - x{numOfReps}";
                     svgMain.Source = new Uri(@"pack://application:,,,/assets/exerciseIcons/lunges.svg");
                     break;
                 case 3:
-                    taskTB.Content = $@"Bicep Curl with the Heaviest Object you can Find - {numOfReps}x";
+                    taskTB.Content = $@"Bicep Curl with the Heaviest Object you can Find - x{numOfReps}";
                     svgMain.Source = new Uri(@"pack://application:,,,/assets/exerciseIcons/pickupHeavy.svg");
+                    break;
+                case 4:
+                    taskTB.Content = $@"Spend atleast {numOfReps * 15} seconds outside";
+                    svgMain.Source = new Uri(@"pack://application:,,,/assets/exerciseIcons/spendTimeInSun.svg");
                     break;
             }
 
@@ -186,10 +211,10 @@ namespace Arbi
         private void giveUpBtn_Click(object sender, RoutedEventArgs e)
         {
             sw.Stop();
-            MessageBox.Show(sw.ElapsedMilliseconds.ToString());
             finalScore = currentScore * 5;
             globalVar.daPointsEarned = finalScore;
             globalVar.daScore = currentScore;
+            globalVar.ttlPoints += finalScore;
             globalVar.daTime = sw.ElapsedMilliseconds / 1000;
             finalScoreDailyArbi fsda = new finalScoreDailyArbi();
             fsda.Show();

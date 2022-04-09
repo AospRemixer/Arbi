@@ -11,5 +11,6 @@ namespace Arbi
         public static int daScore { get; set; }
         public static long daTime { get; set; }
         public static int daPointsEarned { get; set; }
+        public static int ttlPoints { get; set; }
     }
 }

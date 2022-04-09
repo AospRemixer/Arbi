@@ -10,7 +10,7 @@
         WindowStartupLocation="CenterScreen"
         ResizeMode="NoResize"
         Title="Your Arbi's Result" Height="450" Width="800">
-    <Grid Margin="-2">
+    <Grid Margin="-3">
         <Label Content="Your Arbis Result" FontFamily="{StaticResource Typo}" FontSize="80" Foreground="White" HorizontalAlignment="Center" Margin="112,54,116.6,273" Width="565"/>
         <Label Content="Today  was" FontFamily="{StaticResource Typo}" FontSize="50" Foreground="White" HorizontalAlignment="Center" Margin="249,128,-20.4,214" Width="565"/>
         <Label Content="Score" FontFamily="{StaticResource Typo}" FontSize="50" Foreground="#6B6BFF" HorizontalAlignment="Center" Margin="74,306,593.6,47" Width="130"/>
@@ -50,5 +50,6 @@
                 </Style>
             </Button.Style>
         </Button>
+        <Label Content="In Seconds" FontFamily="{StaticResource Typo}" FontSize="25" Foreground="#6B6BFF" HorizontalAlignment="Center" Margin="245,351,422.6,2" Width="130"/>
     </Grid>
 </Window>

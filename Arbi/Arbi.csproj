@@ -79,7 +79,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="browserActivities.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="finalScoreDailyArbi.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="homeBrowse.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -91,10 +99,16 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="browserActivities.xaml.cs">
+      <DependentUpon>browserActivities.xaml</DependentUpon>
+    </Compile>
     <Compile Include="finalScoreDailyArbi.xaml.cs">
       <DependentUpon>finalScoreDailyArbi.xaml</DependentUpon>
     </Compile>
     <Compile Include="globalVar.cs" />
+    <Compile Include="homeBrowse.xaml.cs">
+      <DependentUpon>homeBrowse.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -142,6 +156,20 @@
     <Resource Include="assets\exerciseIcons\lunges.svg" />
     <Resource Include="assets\exerciseIcons\pickupHeavy.svg" />
     <Resource Include="assets\exerciseIcons\plank.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\exerciseIcons\spendTimeInSun.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\btnVisuals\drawing.svg" />
+    <Resource Include="assets\btnVisuals\geography.svg" />
+    <Resource Include="assets\btnVisuals\maths.svg" />
+    <Resource Include="assets\btnVisuals\reading.svg" />
+    <Resource Include="assets\btnVisuals\science.svg" />
+    <Resource Include="assets\btnVisuals\workout.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\coins.svg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -68,9 +68,14 @@ namespace Arbi
             }
             else if (curScoreShowed == 1)
             {
-                MessageBox.Show(timeLabel.Content.ToString());
                 curScoreShowed = 2;
                 Counter_Timer.Start();
+            }
+            else if (curScoreShowed == 2)
+            {
+                browserActivities ba = new browserActivities();
+                ba.Show();
+                this.Close();
             }
         }
     }
