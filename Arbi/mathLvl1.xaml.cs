@@ -47,7 +47,7 @@ namespace Arbi
                 curScoreE += 1;
                 curScore.Content = curScoreE;
                 makeProblem();
-                // Then Continue and add points.
+                awnsTxt.Text = string.Empty;
             }
             else if (checkProblem() == false)
             {

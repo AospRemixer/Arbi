@@ -17,13 +17,7 @@
     <Border CornerRadius="20" Background="#3a2d58">
         <Grid>
             <Rectangle Fill="White" Margin="0,1,0,696" Panel.ZIndex="49"/>
-            <Button Height="20" Width="20" Background="Red" Click="exitBtnClick" BorderThickness="0" Panel.ZIndex="50" Margin="1257,2,3,698">
-                <Button.Resources>
-                    <Style TargetType="{x:Type Border}">
-                        <Setter Property="CornerRadius" Value="50"/>
-                    </Style>
-                </Button.Resources>
-            </Button>
+            <Button Background="Red" Foreground="White" FontFamily="{StaticResource Typo}" FontSize="15" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="X" Click="exitBtnClick" BorderThickness="0" Panel.ZIndex="50" Margin="1257,1,0,696"/>
             <Rectangle Fill="#8760c5" Margin="-8,0,1267,0" Panel.ZIndex="48"/>
             <Button Margin="-47,46,1121,536" Background="#3a2d58" BorderBrush="#8460c6" BorderThickness="6">
                 <Button.Resources>

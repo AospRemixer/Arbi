@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using AngouriMath;
+using AngouriMath.Extensions;
 
 namespace Arbi
 {
@@ -42,18 +43,17 @@ namespace Arbi
 
         private void submit_Click(object sender, RoutedEventArgs e)
         {
-            if (checkProblem())
+            if (checkProblem(curProblem))
             {
-                globalVar gv = new globalVar();
                 curScoreE += 1;
                 curScore.Content = curScoreE;
                 makeProblem();
-                // Then Continue and add points.
+                awnsTxt.Text = string.Empty;
             }
-            else if (checkProblem() == false)
+            else if (checkProblem(curProblem) == false)
             {
                 sw.Stop();
-                int pointsToAdd = curScoreE * 5;
+                int pointsToAdd = curScoreE * 10;
                 globalVar.daPointsEarned = pointsToAdd;
                 globalVar.daScore = curScoreE;
                 globalVar.daTime = sw.ElapsedMilliseconds / 1000;
@@ -64,23 +64,68 @@ namespace Arbi
 
         }
 
-        void makeProblem()
+        public string problemTemplateGen()
         {
-            curOper = RandomNumber(1, 20);
-            switch (curOper)
+            int r = RandomNumber(1, 8);
+            int a = RandomNumber(1, 100);
+            int b = RandomNumber(1, 100);
+            int c = RandomNumber(1, 100);
+            string result = string.Empty;
+            switch (r)
             {
                 case 1:
-                    //  !! HAVE TO FINISH THIS !!
+                    result = $"{a}x = {a * b}";
+                    break;
+                case 2:
+                    result = $"{a}x - {b} = {(a * c) - b}";
+                    break;
+                case 3:
+                    result = $"{a} + {b} + x = {a + b + c}";
+                    break;
+                case 4:
+                    result = $"{a} - x = {a * c}";
+                    break;
+                case 5:
+                    result = $"{a} + x = {a + c}";
+                    break;
+                case 6:
+                    result = $"{a} + (-x) = {a - c}";
+                    break;
+                case 7:
+                    result = $"{a} - (-x) = {a + c}";
                     break;
             }
-            equaTxt.Content = curProblem;
+            return result;
         }
 
-        bool checkProblem()
+        void makeProblem()
         {
-            Entity expr = equaTxt.Content.ToString();
-            var a = expr.EvalNumerical();
-            if (a.ToString() == awnsTxt.Text.Trim())
+            curProblem = problemTemplateGen();
+            latexTxt.Formula = curProblem.Latexise();
+        }
+
+        // Checks if Answer is Correct
+        bool checkProblem(string equation)
+        {
+            string solveResult = equation.Solve("x").ToString();
+            string needB = string.Empty;
+            foreach (char x in solveResult)
+            {
+                if (x == '{')
+                {
+                    // Do Nothing
+                }
+                else if (x == '}')
+                {
+                    // Also Do Nothing
+                }
+                else
+                {
+                    needB += x.ToString();
+                }
+            }
+            string finalAngouriResult = needB.Trim();
+            if (finalAngouriResult == awnsTxt.Text.Trim())
             {
                 return true;
             }

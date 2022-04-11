@@ -3,15 +3,15 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:controls="clr-namespace:WpfMath.Controls;assembly=WpfMath"
         xmlns:local="clr-namespace:Arbi"
         mc:Ignorable="d"
         ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen"
         Background="#3a2d58"
         Title="High School Level Math" Height="720" Width="1200">
-    <Grid Margin="-4">
-        <Label FontFamily="Times New Roman" Content="1" HorizontalContentAlignment="Center" Name="equaTxt" Foreground="White" FontSize="150" HorizontalAlignment="Center" Margin="10,172,9.6,-171.6" Width="1174"/>
-        <Label FontFamily="Times New Roman" Content="Solve." Foreground="White" FontSize="50" HorizontalAlignment="Center" Margin="413,124,636.6,-123.6" Width="152"/>
+    <Grid Margin="-7">
+        <Label FontFamily="Times New Roman" Content="Solve for x." Foreground="White" FontSize="50" HorizontalAlignment="Center" Margin="416,116,548.6,402.4" Width="243"/>
         <TextBox Name="awnsTxt" GotKeyboardFocus="lostFocusKeyboard" Margin="210,418,209.6,182.4" Background="#8460c6" Foreground="White" Text="Answer Here..." FontSize="50" FontFamily="Times New Roman" TextWrapping="NoWrap" BorderThickness="4" BorderBrush="White">
             <TextBox.Resources>
                 <Style TargetType="{x:Type Border}">
@@ -29,5 +29,6 @@
         <Label Content="Your Score" Foreground="White" FontSize="30" FontFamily="Times New Roman" Margin="1035,124,-1035.4,-123.6"/>
         <Label Content="0" Foreground="White" Name="curScore" HorizontalContentAlignment="Left" FontSize="30" FontFamily="Times New Roman" Margin="1039,160,-1039.4,-159.6"/>
         <Label FontFamily="Times New Roman" Content="You May Use a piece of paper." Foreground="White" FontSize="20" HorizontalAlignment="Center" Margin="746,516,-170.4,116.4" Width="626"/>
+        <controls:FormulaControl HorizontalContentAlignment="Center" Name="latexTxt" Formula="1" Scale="90" HorizontalAlignment="Center" Foreground="White" Margin="10,199,9.6,-214.6" Width="1182" />
     </Grid>
 </Window>
