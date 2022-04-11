@@ -24,5 +24,16 @@ namespace Arbi
         {
             InitializeComponent();
         }
+
+        private void workoutBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void mathBtn_Click(object sender, RoutedEventArgs e)
+        {
+            mathQ mq = new mathQ();
+            mq.Show();
+        }
     }
 }

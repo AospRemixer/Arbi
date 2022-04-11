@@ -17,7 +17,7 @@
     <Border CornerRadius="20" Background="#3a2d58">
         <Grid>
             <Rectangle Fill="White" Margin="0,1,0,696" Panel.ZIndex="49"/>
-            <Button Height="15" Width="15" Background="Red" Click="exitBtnClick" BorderThickness="0" Panel.ZIndex="50" Margin="1252,5,13,700">
+            <Button Height="20" Width="20" Background="Red" Click="exitBtnClick" BorderThickness="0" Panel.ZIndex="50" Margin="1257,2,3,698">
                 <Button.Resources>
                     <Style TargetType="{x:Type Border}">
                         <Setter Property="CornerRadius" Value="50"/>

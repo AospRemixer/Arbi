@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Threading;
 
 namespace Arbi
 {
@@ -26,6 +27,19 @@ namespace Arbi
             homeBrowse hb = new homeBrowse();
             browseFrame.Content = hb;
             ttlPointsLabel.Content = globalVar.ttlPoints;
+            var _activeTimer = new DispatcherTimer
+            {
+                Interval = TimeSpan.FromSeconds(15)
+            };
+            _activeTimer.Tick += delegate (object sender, EventArgs e) {
+                recheckPoints();
+            };
+            _activeTimer.Start();
+        }
+
+        public void recheckPoints()
+        {
+            ttlPointsLabel.Content = globalVar.ttlPoints;
         }
 
         // To Help Move Around The App
@@ -37,6 +51,8 @@ namespace Arbi
 
         private void exitBtnClick(object sender, RoutedEventArgs e)
         {
+            globalVar gv = new globalVar();
+            gv.saveAll();
             Application.Current.Shutdown();
         }
     }

@@ -10,7 +10,7 @@
       Title="homeBrowse">
 
     <Grid>
-        <Button Background="#2fe4d1" Height="250" Panel.ZIndex="80" Margin="0,170,552.8,275.2" BorderThickness="0">
+        <Button Background="#2fe4d1" Height="250" Panel.ZIndex="80" ToolTipService.ToolTip="Maths" Click="workoutBtn_Click" Margin="0,170,552.8,275.2" BorderThickness="0">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="50"/>
@@ -20,7 +20,7 @@
         </Button>
         <Label Content="Discover" FontSize="80" Foreground="White"  FontFamily="{StaticResource Typo}" Panel.ZIndex="20" Margin="0,0,552.8,-24.8"/>
         <Rectangle Fill="White" Margin="0,96,723.8,587.2" Panel.ZIndex="49"/>
-        <Button Background="#1cd2dd" Height="250" Width="250" Margin="544,170,282.8,275.2" BorderThickness="0">
+        <Button Background="#1cd2dd" Height="250" Width="250" Margin="544,170,282.8,275.2"  Click="mathBtn_Click" BorderThickness="0">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="50"/>

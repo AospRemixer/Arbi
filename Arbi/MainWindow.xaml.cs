@@ -33,6 +33,9 @@ namespace Arbi
         public MainWindow()
         {
             InitializeComponent();
+            globalVar gv = new globalVar();
+            gv.openAll();
+
         }
 
         private void nextBtn_Click(object sender, RoutedEventArgs e)
@@ -212,7 +215,7 @@ namespace Arbi
         {
             sw.Stop();
             finalScore = currentScore * 5;
-            globalVar.daPointsEarned = finalScore;
+            globalVar.daPointsEarned += finalScore;
             globalVar.daScore = currentScore;
             globalVar.ttlPoints += finalScore;
             globalVar.daTime = sw.ElapsedMilliseconds / 1000;
