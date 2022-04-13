@@ -19,7 +19,7 @@ namespace Arbi
     /// Interaction logic for homeBrowse.xaml
     /// </summary>
     public partial class homeBrowse : Page
-    {
+    {   
         public homeBrowse()
         {
             InitializeComponent();
@@ -34,6 +34,18 @@ namespace Arbi
         {
             mathQ mq = new mathQ();
             mq.Show();
+        }
+
+        private void drawingBtn_Click(object sender, RoutedEventArgs e)
+        {
+            artWindow aw = new artWindow();
+            aw.Show();
+        }
+
+        private void readingBtn(object sender, RoutedEventArgs e)
+        {
+            readingWindowStart rws = new readingWindowStart();
+            rws.Show();
         }
     }
 }

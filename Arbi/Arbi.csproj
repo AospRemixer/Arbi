@@ -56,6 +56,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="readingLvl1.xaml.cs">
+      <DependentUpon>readingLvl1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="readingLvl2.xaml.cs">
+      <DependentUpon>readingLvl2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="readingWindowStart.xaml.cs">
+      <DependentUpon>readingWindowStart.xaml</DependentUpon>
+    </Compile>
+    <Page Include="artWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="browserActivities.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -79,6 +92,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="artWindow.xaml.cs">
+      <DependentUpon>artWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="browserActivities.xaml.cs">
       <DependentUpon>browserActivities.xaml</DependentUpon>
@@ -110,6 +126,18 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="mathQ.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="readingLvl1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="readingLvl2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="readingWindowStart.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -186,6 +214,12 @@
     <PackageReference Include="AngouriMath">
       <Version>1.3.0</Version>
     </PackageReference>
+    <PackageReference Include="Notifications.Wpf">
+      <Version>0.1.1</Version>
+    </PackageReference>
+    <PackageReference Include="PixiEditor.ColorPicker">
+      <Version>3.3.1</Version>
+    </PackageReference>
     <PackageReference Include="SharpVectors">
       <Version>1.7.7</Version>
     </PackageReference>
@@ -197,6 +231,34 @@
     <Resource Include="assets\sklIcns\elementarySklIcn.png" />
     <Resource Include="assets\sklIcns\hsIcn.png" />
     <Resource Include="assets\sklIcns\middleSklIcn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\viewB\full.svg" />
+    <Resource Include="assets\viewB\minm.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\drawingIcons\paintBrush.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\drawingIcons\download.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\drawingIcons\eraser.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\drawingIcons\highlighter.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\drawingIcons\check.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\drawingIcons\select.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\drawingIcons\undo.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\drawingIcons\garbage.svg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

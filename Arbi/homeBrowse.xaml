@@ -28,7 +28,7 @@
             </Button.Resources>
             <svgc:SvgViewbox Source="assets/btnVisuals/maths.svg" Name="mathsSVG" Height="200" Width="200"/>
         </Button>
-        <Button Background="#6e52a5" Height="250" Width="250" Margin="814,170,12.8,275.2" BorderThickness="0">
+        <Button Background="#6e52a5" Height="250" Width="250" Click="readingBtn" Margin="814,170,12.8,275.2" BorderThickness="0">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="50"/>
@@ -36,7 +36,7 @@
             </Button.Resources>
             <svgc:SvgViewbox Source="assets/btnVisuals/reading.svg" Name="readingSVG" Height="200" Width="200"/>
         </Button>
-        <Button Background="#8561c5" Height="200" Width="200" Panel.ZIndex="20" Margin="0,446,876.8,49.2" BorderThickness="0">
+        <Button Background="#8561c5" Height="200" Width="200" Panel.ZIndex="20" Margin="0,446,876.8,49.2" Click="drawingBtn_Click" BorderThickness="0">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="50"/>
