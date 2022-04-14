@@ -27,7 +27,8 @@ namespace Arbi
 
         private void workoutBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            workoutWindow ww = new workoutWindow();
+            ww.Show();
         }
 
         private void mathBtn_Click(object sender, RoutedEventArgs e)

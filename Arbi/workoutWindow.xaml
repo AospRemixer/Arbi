@@ -1,0 +1,97 @@
+﻿<Window x:Class="Arbi.workoutWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:svgc="http://sharpvectors.codeplex.com/svgc/"
+        xmlns:local="clr-namespace:Arbi"
+        mc:Ignorable="d"
+        Background="#3a2d58"
+        WindowStartupLocation="CenterScreen"
+        Title="Your Daily Arbi" Height="720" Width="1280">
+    <Grid>
+        <TextBlock Margin="1067,0,-0.4,0.4" TextAlignment="Center" Foreground="White" Text="Your Score" FontFamily="{StaticResource Typo}" FontSize="40" VerticalAlignment="Center"/>
+        <TextBlock Margin="1067,357,-0.4,279.4" TextAlignment="Center" Foreground="White" Name="scoreNumTxt" Text="0" FontFamily="{StaticResource Typo}" FontSize="40" VerticalAlignment="Center"/>
+        <Label x:Name="taskTB" Content="" Foreground="White" HorizontalAlignment="Left" HorizontalContentAlignment="Center" FontSize="40" FontFamily="{StaticResource Typo}" Margin="0,0,0,608.4" Width="1264"/>
+        <Button ToolTipService.ToolTip="Your Task" ToolTipService.ShowDuration="3000" Background="#b98cff" BorderThickness="0" Name="activityBtn" Panel.ZIndex="100" Margin="144,82,211.6,158.4" Grid.Column="1">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="50"/>
+                </Style>
+            </Button.Resources>
+            <svgc:SvgViewbox Source="assets/welcomeCats.svg" Name="svgMain" Height="383"/>
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Background" Value="White" />
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border x:Name="Border" Background="{TemplateBinding Background}">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                </Border>
+                                <ControlTemplate.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background" Value="#2FADCC" TargetName="Border" />
+                                    </Trigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </Button.Style>
+        </Button>
+        <Button Background="#b98cff" ToolTipService.ShowDuration="3000" ToolTipService.ToolTip="Next" BorderThickness="0" x:Name="nextBtn" Click="nextBtn_Click" Panel.ZIndex="100" Margin="696,560,211.6,28.4" Grid.Column="1">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="50"/>
+                </Style>
+            </Button.Resources>
+            <svgc:SvgViewbox Source="assets/nextBtnIcon.svg" Name="svgNextBtn" Height="68" Width="74"/>
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Background" Value="White" />
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border x:Name="Border" Background="{TemplateBinding Background}">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                </Border>
+                                <ControlTemplate.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background" Value="#2FADCC" TargetName="Border" />
+                                    </Trigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </Button.Style>
+        </Button>
+        <Button Background="#b98cff" Click="giveUpBtn_Click" ToolTipService.ShowDuration="3000" ToolTipService.ToolTip="Give up" BorderThickness="0" x:Name="giveUpBtn" Panel.ZIndex="100" Margin="144,560,763.6,28.4" Grid.Column="1">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="50"/>
+                </Style>
+            </Button.Resources>
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Background" Value="White" />
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border x:Name="Border" Background="{TemplateBinding Background}">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                </Border>
+                                <ControlTemplate.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background" Value="#2FADCC" TargetName="Border" />
+                                    </Trigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </Button.Style>
+            <svgc:SvgViewbox Source="assets/giveupIcon.svg" x:Name="svgNextBtn1" Height="68" Width="74"/>
+        </Button>
+    </Grid></Window>

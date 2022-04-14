@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
-using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -12,16 +11,14 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
-using System.Windows.Threading;
 
 namespace Arbi
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for workoutWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class workoutWindow : Window
     {
         int currentScore = 0;
         bool curStarted = false;
@@ -30,7 +27,7 @@ namespace Arbi
         bool swStarted = false;
         public Stopwatch sw = new Stopwatch();
 
-        public MainWindow()
+        public workoutWindow()
         {
             InitializeComponent();
             globalVar gv = new globalVar();
@@ -178,7 +175,7 @@ namespace Arbi
             }
 
             int nextActivityI = new Random().Next(9);
-            switch (nextActivityI)
+            switch(nextActivityI)
             {
                 case 0:
                     taskTB.Content = $@"Do Crunches - x{numOfReps}";
@@ -229,15 +226,37 @@ namespace Arbi
 
         private void giveUpBtn_Click(object sender, RoutedEventArgs e)
         {
-            sw.Stop();
-            finalScore = currentScore * 5;
-            globalVar.daPointsEarned += finalScore;
-            globalVar.daScore = currentScore;
-            globalVar.ttlPoints += finalScore;
-            globalVar.daTime = sw.ElapsedMilliseconds / 1000;
-            finalScoreDailyArbi fsda = new finalScoreDailyArbi();
-            fsda.Show();
-            this.Close();
+            if (currentScore > 0)
+            {
+                if ((sw.ElapsedMilliseconds / 1000) / currentScore >= 10)
+                {
+                    finalScore = currentScore * 5;
+                    globalVar.daPointsEarned += finalScore;
+                    globalVar.daScore = currentScore;
+                    globalVar.ttlPoints += finalScore;
+                    globalVar.daTime = sw.ElapsedMilliseconds / 1000;
+                    finalScore fsda = new finalScore();
+                    fsda.Show();
+                    this.Close();
+                }
+                else
+                {
+                    int num = Convert.ToInt32((currentScore * 10) - sw.ElapsedMilliseconds / 1000);
+                    var Result = MessageBox.Show($"You did these too fast, spend atleast {num} seconds per exercise to earn points!\nAre you sure you want to give up now? No points will be given if you do.", "Penalty", MessageBoxButton.YesNo, MessageBoxImage.Warning);
+                    if(Result == MessageBoxResult.Yes)
+                    {
+                        Close();
+                    }
+                    else if (Result == MessageBoxResult.No)
+                    {
+
+                    }
+                }
+            }
+            else
+            {
+                Close();
+            }
         }
     }
 }

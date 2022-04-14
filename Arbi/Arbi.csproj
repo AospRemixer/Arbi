@@ -65,6 +65,9 @@
     <Compile Include="readingWindowStart.xaml.cs">
       <DependentUpon>readingWindowStart.xaml</DependentUpon>
     </Compile>
+    <Compile Include="workoutWindow.xaml.cs">
+      <DependentUpon>workoutWindow.xaml</DependentUpon>
+    </Compile>
     <Page Include="artWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -138,6 +141,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="readingWindowStart.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="workoutWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -259,6 +266,18 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="assets\drawingIcons\garbage.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\exerciseIcons\kneePushups.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\exerciseIcons\squats.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\exerciseIcons\jogInPlace.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\exerciseIcons\dumbbellsUp.svg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
