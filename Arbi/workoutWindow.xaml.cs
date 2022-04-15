@@ -242,7 +242,7 @@ namespace Arbi
                 else
                 {
                     int num = Convert.ToInt32((currentScore * 10) - sw.ElapsedMilliseconds / 1000);
-                    var Result = MessageBox.Show($"You did these too fast, spend atleast {num} seconds per exercise to earn points!\nAre you sure you want to give up now? No points will be given if you do.", "Penalty", MessageBoxButton.YesNo, MessageBoxImage.Warning);
+                    var Result = MessageBox.Show($"You did these too fast, spend atleast {num} seconds more to earn points!\nOr you can give up now, no points will be given if you do.", "Penalty", MessageBoxButton.YesNo, MessageBoxImage.Warning);
                     if(Result == MessageBoxResult.Yes)
                     {
                         Close();

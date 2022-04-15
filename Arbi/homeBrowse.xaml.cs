@@ -48,5 +48,17 @@ namespace Arbi
             readingWindowStart rws = new readingWindowStart();
             rws.Show();
         }
+
+        private void geoClick(object sender, RoutedEventArgs e)
+        {
+            geographyWindow gw = new geographyWindow();
+            gw.Show();
+        }
+
+        private void sci_Click(object sender, RoutedEventArgs e)
+        {
+            scienceWindow sw = new scienceWindow();
+            sw.Show();
+        }
     }
 }

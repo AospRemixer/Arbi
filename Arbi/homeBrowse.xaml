@@ -10,7 +10,7 @@
       Title="homeBrowse">
 
     <Grid>
-        <Button Background="#2fe4d1" Height="250" Panel.ZIndex="80" ToolTipService.ToolTip="Maths" Click="workoutBtn_Click" Margin="0,170,552.8,275.2" BorderThickness="0">
+        <Button Background="#2fe4d1" Height="250" Panel.ZIndex="80" ToolTipService.ToolTip="Workout" Click="workoutBtn_Click" Margin="0,170,552.8,275.2" BorderThickness="0">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="50"/>
@@ -20,7 +20,7 @@
         </Button>
         <Label Content="Discover" FontSize="80" Foreground="White"  FontFamily="{StaticResource Typo}" Panel.ZIndex="20" Margin="0,0,552.8,-24.8"/>
         <Rectangle Fill="White" Margin="0,96,723.8,587.2" Panel.ZIndex="49"/>
-        <Button Background="#1cd2dd" Height="250" Width="250" Margin="544,170,282.8,275.2"  Click="mathBtn_Click" BorderThickness="0">
+        <Button Background="#1cd2dd" Height="250" Width="250" ToolTipService.ToolTip="Maths" Margin="544,170,282.8,275.2"  Click="mathBtn_Click" BorderThickness="0">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="50"/>
@@ -28,7 +28,7 @@
             </Button.Resources>
             <svgc:SvgViewbox Source="assets/btnVisuals/maths.svg" Name="mathsSVG" Height="200" Width="200"/>
         </Button>
-        <Button Background="#6e52a5" Height="250" Width="250" Click="readingBtn" Margin="814,170,12.8,275.2" BorderThickness="0">
+        <Button Background="#6e52a5" Height="250" Width="250" Click="readingBtn" ToolTipService.ToolTip="Reading" Margin="814,170,12.8,275.2" BorderThickness="0">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="50"/>
@@ -36,7 +36,7 @@
             </Button.Resources>
             <svgc:SvgViewbox Source="assets/btnVisuals/reading.svg" Name="readingSVG" Height="200" Width="200"/>
         </Button>
-        <Button Background="#8561c5" Height="200" Width="200" Panel.ZIndex="20" Margin="0,446,876.8,49.2" Click="drawingBtn_Click" BorderThickness="0">
+        <Button Background="#8561c5" Height="200" Width="200" Panel.ZIndex="20" ToolTipService.ToolTip="Drawing" Margin="0,446,876.8,49.2" Click="drawingBtn_Click" BorderThickness="0">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="50"/>
@@ -44,7 +44,7 @@
             </Button.Resources>
             <svgc:SvgViewbox Source="assets/btnVisuals/drawing.svg" Name="drawingSVG" Height="150" Width="150"/>
         </Button>
-        <Button Background="#b1f6ee" Height="200" Panel.ZIndex="20" Margin="228,446,369.8,49.2" BorderThickness="0">
+        <Button Background="#b1f6ee" Height="200" Click="geoClick"  Panel.ZIndex="20"  ToolTipService.ToolTip="Geography" Margin="228,446,369.8,49.2" BorderThickness="0">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="50"/>
@@ -52,7 +52,7 @@
             </Button.Resources>
             <svgc:SvgViewbox Source="assets/btnVisuals/geography.svg" Name="geographySVG" Height="200" Width="200"/>
         </Button>
-        <Button Background="#2fe4d1" Height="200" Panel.ZIndex="20" Margin="730,446,12.8,49.2" BorderThickness="0">
+        <Button Background="#2fe4d1" Height="200" Panel.ZIndex="20" Margin="730,446,12.8,49.2" ToolTipService.ToolTip="Science" BorderThickness="0" Click="sci_Click">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="50"/>

@@ -1,8 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Media;
+using System.Net;
+using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -33,9 +37,19 @@ namespace Arbi
         public MainWindow()
         {
             InitializeComponent();
+            // Checks if DATA file is present, if not, then it creats a new one!
+            if (File.Exists("data.arbi") == false)
+            {
+                // Create a new file     
+                using (FileStream fs = File.Create("data.arbi"))
+                {
+                    // Add some text to file    
+                    Byte[] title = new UTF8Encoding(true).GetBytes("0");
+                    fs.Write(title, 0, title.Length);
+                }
+            }
             globalVar gv = new globalVar();
             gv.openAll();
-
         }
 
         private void nextBtn_Click(object sender, RoutedEventArgs e)
