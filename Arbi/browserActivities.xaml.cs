@@ -76,8 +76,6 @@ namespace Arbi
 
         private void thirdBtn_Click(object sender, RoutedEventArgs e)
         {
-            // doc d = new doc();
-            // browseFrame.Content = d;
             learnWindow lw = new learnWindow();
             lw.Show();
         }

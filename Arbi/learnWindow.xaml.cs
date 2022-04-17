@@ -39,7 +39,7 @@ namespace Arbi
                 $@"https://cemc.uwaterloo.ca/contests/past_contests/{year}/{year}EuclidContest.pdf",
                 $@"https://cemc.uwaterloo.ca/contests/past_contests/{year}/{year}CIMC.pdf",
                 $@"https://cemc.uwaterloo.ca/contests/past_contests/{year}/{year}CSMC.pdf"};
-            string[] solutionPage = { $@"https://cemc.uwaterloo.ca/contests/past_contests/{year}/{year}Gauss7Solution.pdf",
+            string[] solutionPage = { $@"https://cemc.uwaterloo.ca/contests/past_contests/{year}/{year}GaussSolution.pdf",
                 $@"https://cemc.uwaterloo.ca/contests/past_contests/{year}/{year}PascalSolution.pdf",
                 $@"https://cemc.uwaterloo.ca/contests/past_contests/{year}/{year}CayleySolution.pdf",
                 $@"https://cemc.uwaterloo.ca/contests/past_contests/{year}/{year}FermatSolution.pdf",
