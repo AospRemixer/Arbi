@@ -55,5 +55,28 @@ namespace Arbi
             gv.saveAll();
             Application.Current.Shutdown();
         }
+
+        private void lastBtn_Click(object sender, RoutedEventArgs e)
+        {
+            share s = new share();
+            browseFrame.Content = s;
+        }
+
+        private void firstBtn_Click(object sender, RoutedEventArgs e)
+        {
+            homeBrowse hb = new homeBrowse();
+            browseFrame.Content = hb;
+        }
+
+        private void secondBtn_Click(object sender, RoutedEventArgs e)
+        {
+            random r = new random();
+            browseFrame.Content = r;
+        }
+
+        private void thirdBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

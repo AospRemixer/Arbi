@@ -1,0 +1,24 @@
+﻿<Page x:Class="Arbi.random"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:svgc="http://sharpvectors.codeplex.com/svgc/"
+      xmlns:local="clr-namespace:Arbi"
+      mc:Ignorable="d" 
+      d:DesignHeight="695" d:DesignWidth="1077">
+
+    <Grid>
+        <Label Content="Random" FontSize="80" Foreground="White"  FontFamily="{StaticResource Typo}" Panel.ZIndex="20" Margin="0,0,686.8,556.2"/>
+        <Rectangle Fill="White" Margin="0,96,723.8,587.2" Panel.ZIndex="49"/>
+        <Button Background="White" Height="450" Width="450" ToolTipService.ToolTip="Random Activity" Margin="325,162,301.8,83.2"  Click="randomBtn_Click" BorderThickness="0">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="50"/>
+                </Style>
+            </Button.Resources>
+            <svgc:SvgViewbox Source="assets/btnIcns/questionB.svg" x:Name="mathsSVG" Height="342" Width="398"/>
+        </Button>
+
+    </Grid>
+</Page>

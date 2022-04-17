@@ -1,0 +1,52 @@
+﻿<Page x:Class="Arbi.share"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Arbi" xmlns:svgc="http://sharpvectors.codeplex.com/svgc/"
+      mc:Ignorable="d" 
+      d:DesignHeight="695" d:DesignWidth="1077"
+      Title="share">
+
+    <Grid>
+        <Image Source="assets/imgs/arbiTweet.png" Panel.ZIndex="1" Margin="6,254,750.8,285.2"/>
+        <Rectangle Fill="#8760c5" Panel.ZIndex="0" Margin="6,249,750.8,269.2" RadiusY="13.6" RadiusX="13.6"/>
+        <Rectangle Fill="#8760c5" Panel.ZIndex="2" RadiusY="13.6" RadiusX="0" Margin="6,403,750.8,278.2"/>
+        <Image Source="assets/imgs/discordMsg.png" Panel.ZIndex="1" Margin="6,411,750.8,143.2"/>
+        <Rectangle Fill="#8760c5" Panel.ZIndex="0" Margin="6,375,750.8,139.2" RadiusY="13.6" RadiusX="13.6"/>
+        <Button BorderThickness="0" Width="370" HorizontalAlignment="Left" Margin="331,212,0,105.2" Click="tweet_click" Background="#8760c5">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="30"/>
+                </Style>
+            </Button.Resources>
+            <svgc:SvgViewbox Source="assets/btnIcns/twitter.svg" Panel.ZIndex="2" Height="198" Width="250"/>
+        </Button>
+        <Button BorderThickness="0" Width="370" HorizontalAlignment="Left" Margin="706,212,0,105.2" Click="discord_click" Background="#8760c5">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="30"/>
+                </Style>
+            </Button.Resources>
+            <svgc:SvgViewbox Source="assets/btnIcns/discord.svg" Panel.ZIndex="2" Height="181" Width="225"/>
+        </Button>
+        <Button BorderThickness="0" Width="240" HorizontalAlignment="Left" Margin="774,595,0,18.2" Click="joinDiscord_click" Background="#8760c5">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="30"/>
+                </Style>
+            </Button.Resources>
+            <Label Content="Join Server!" FontFamily="{StaticResource Typo}" Foreground="White" FontSize="30"/>
+        </Button>
+        <TextBox x:Name="awnsTxt" GotKeyboardFocus="lostFocusKeyboard" Margin="743,136,27.8,488.2" Background="#8460c6" Foreground="White" Text="Display Name..." FontSize="40" FontFamily="{StaticResource Typo}" TextWrapping="NoWrap" BorderThickness="4" BorderBrush="White">
+            <TextBox.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </TextBox.Resources>
+        </TextBox>
+        <Label Content="Share your Arbi" FontSize="80" Foreground="White"  FontFamily="{StaticResource Typo}" Panel.ZIndex="20" Margin="0,0,550.8,556.2"/>
+        <Rectangle Fill="White" Margin="0,96,524.8,587.2" Panel.ZIndex="49"/>
+
+    </Grid>
+</Page>
