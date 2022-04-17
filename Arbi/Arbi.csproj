@@ -56,11 +56,17 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="doc.xaml.cs">
+      <DependentUpon>doc.xaml</DependentUpon>
+    </Compile>
     <Compile Include="geographyWindow.xaml.cs">
       <DependentUpon>geographyWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="learn.xaml.cs">
       <DependentUpon>learn.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="learnWindow.xaml.cs">
+      <DependentUpon>learnWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="random.xaml.cs">
       <DependentUpon>random.xaml</DependentUpon>
@@ -91,6 +97,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="doc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="finalScore.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -108,6 +118,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="learn.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="learnWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

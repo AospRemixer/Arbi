@@ -86,7 +86,7 @@ namespace Arbi
 
         private void joinDiscord_click(object sender, RoutedEventArgs e)
         {
-
+            System.Diagnostics.Process.Start(@"https://discord.gg/FjVMakcGN5");
         }
     }
 }

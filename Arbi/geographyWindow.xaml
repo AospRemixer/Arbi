@@ -9,7 +9,7 @@
         WindowStartupLocation="CenterScreen"
         mc:Ignorable="d"
         ResizeMode="NoResize"
-        Title="Elementary School Level English" Height="720" Width="1200">
+        Title="Geography" Height="720" Width="1200">
     <Grid>
         <svgc:SvgViewbox  Name="svgViewbox" Source="https://flagcdn.com/ca.svg" Height="384" Stretch="Fill" Margin="250,82,250,250"/>
         <Rectangle Fill="#b98cff" Margin="238,70,240.6,238.4" Panel.ZIndex="-1"/>

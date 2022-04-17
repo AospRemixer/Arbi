@@ -9,7 +9,7 @@
         WindowStartupLocation="CenterScreen"
         mc:Ignorable="d"
         ResizeMode="NoResize"
-        Title="Science Window" Height="720" Width="1200">
+        Title="Science" Height="720" Width="1200">
     <Grid>
         <WebBrowser Margin="0,0,600,0.4" Source="https://www.easternct.edu/mathematical-sciences/_documents/Physical-Science-Tables-Formulas-and-Equations.pdf"/>
         <TextBlock Text="0. Question..." Name="question" TextWrapping="Wrap" Foreground="White" FontFamily="Times New Roman" FontSize="50" Margin="616,32,-0.4,10.4"/>
