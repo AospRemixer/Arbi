@@ -7,6 +7,7 @@
         xmlns:local="clr-namespace:Arbi"
         mc:Ignorable="d"
         Background="#3a2d58"
+        ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen"
         Title="Workout" Height="720" Width="1280">
     <!--This is the workout window; This one requires you to spend atleast 15 seconds per exercise!-->

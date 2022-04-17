@@ -7,6 +7,7 @@
         xmlns:local="clr-namespace:Arbi"
         mc:Ignorable="d"
         Background="#00002C"
+        ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen"
         Title="Your Daily Arbi" Height="720" Width="1280">
     <!--This is the main window, and it is the first thing to appear; it is in a different color theme because it is the "daily" arbi.-->
