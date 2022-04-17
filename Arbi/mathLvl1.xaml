@@ -10,6 +10,7 @@
         mc:Ignorable="d"
         ResizeMode="NoResize"
         Title="Elementary School Level Math" Height="720" Width="1200">
+    <!--Level 1 of Math-->
     <Grid Margin="-4">
         <Label FontFamily="Times New Roman" Content="1" HorizontalContentAlignment="Center" Name="equaTxt" Foreground="White" FontSize="150" HorizontalAlignment="Center" Margin="10,172,9.6,-171.6" Width="1174"/>
         <Label FontFamily="Times New Roman" Content="Solve." Foreground="White" FontSize="50" HorizontalAlignment="Center" Margin="413,124,652.6,-123.6"/>

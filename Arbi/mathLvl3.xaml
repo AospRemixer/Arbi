@@ -10,6 +10,7 @@
         WindowStartupLocation="CenterScreen"
         Background="#3a2d58"
         Title="High School Level Math" Height="720" Width="1200">
+    <!--Level 3 of Math; uses almost the same mechanism as the other math levels; what seperates this one is the fact that it has a latex viewer for the more intense algebra expressions-->
     <Grid Margin="-7">
         <Label FontFamily="Times New Roman" Content="Solve for x." Foreground="White" FontSize="50" HorizontalAlignment="Center" Margin="416,116,548.6,402.4" Width="243"/>
         <TextBox Name="awnsTxt" GotKeyboardFocus="lostFocusKeyboard" Margin="210,418,209.6,182.4" Background="#8460c6" Foreground="White" Text="Answer Here..." FontSize="50" FontFamily="Times New Roman" TextWrapping="NoWrap" BorderThickness="4" BorderBrush="White">

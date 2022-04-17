@@ -21,6 +21,12 @@ namespace Arbi
     /// </summary>
     public partial class browserActivities : Window
     {
+        /// <summary>
+        /// 
+        /// Most of the code below is just there to navigates between the pages.
+        /// 
+        /// </summary>
+
         public browserActivities()
         {
             InitializeComponent();

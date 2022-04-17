@@ -7,7 +7,7 @@
       mc:Ignorable="d" 
       d:DesignHeight="695" d:DesignWidth="1077"
       Title="doc">
-
+    <!--This page is not used in the app; It is used for refrence-->
     <Grid>
         <Label Content="Learn" FontSize="80" Foreground="White"  FontFamily="{StaticResource Typo}" Panel.ZIndex="20" Margin="0,0,812.8,587.2"/>
         <Rectangle Fill="White" Margin="0,96,812.8,587.2" Panel.ZIndex="49"/>

@@ -233,7 +233,7 @@ namespace Arbi
             }
 
         }
-
+        // This code converts hex color to a WPF brush
         SolidColorBrush hexToBrush(string hex)
         {
             SolidColorBrush mySolidColorBrush = new SolidColorBrush();
@@ -241,6 +241,7 @@ namespace Arbi
             return mySolidColorBrush;
         }
 
+        // This is the give up btn, and it saves everything and continues. 
         private void giveUpBtn_Click(object sender, RoutedEventArgs e)
         {
             sw.Stop();

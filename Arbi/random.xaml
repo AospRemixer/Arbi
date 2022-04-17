@@ -7,7 +7,7 @@
       xmlns:local="clr-namespace:Arbi"
       mc:Ignorable="d" 
       d:DesignHeight="695" d:DesignWidth="1077">
-
+    <!--This is the Random Activity Decider PAGE-->
     <Grid>
         <Label Content="Random" FontSize="80" Foreground="White"  FontFamily="{StaticResource Typo}" Panel.ZIndex="20" Margin="0,0,686.8,556.2"/>
         <Rectangle Fill="White" Margin="0,96,723.8,587.2" Panel.ZIndex="49"/>

@@ -9,7 +9,7 @@
         WindowStartupLocation="CenterScreen"
         Background="#3a2d58"
         Title="Reading" Height="450" Width="800">
-
+    <!--This is the window that comes before the reading window it is there to decide the level of reading window that will come next -->
     <Grid Margin="-10">
         <Button BorderThickness="0" Height="200" Width="200" HorizontalAlignment="Left" Margin="180,114,0,114" Click="lvl1_click" Background="#8760c5">
             <Button.Resources>

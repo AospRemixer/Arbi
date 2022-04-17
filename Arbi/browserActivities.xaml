@@ -14,11 +14,13 @@
         MouseDown="MainBrowse_MouseDown"
         Title="Browse Activities" Height="720" Width="1280">
 
+    <!--Main Window-->
     <Border CornerRadius="20" Background="#3a2d58">
         <Grid>
             <Rectangle Fill="White" Margin="0,1,0,696" Panel.ZIndex="49"/>
             <Button Background="Red" Foreground="White" FontFamily="{StaticResource Typo}" FontSize="15" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="X" Click="exitBtnClick" BorderThickness="0" Panel.ZIndex="50" Margin="1257,1,0,696"/>
             <Rectangle Fill="#8760c5" Margin="-8,0,1267,0" Panel.ZIndex="48"/>
+            <!--The buttons on the left-->
             <Button Click="firstBtn_Click" Margin="-47,46,1121,536" Background="#3a2d58" BorderBrush="#8460c6" BorderThickness="6">
                 <Button.Resources>
                     <Style TargetType="{x:Type Border}">
@@ -51,6 +53,7 @@
                 </Button.Resources>
                 <svgc:SvgViewbox Source="assets/btnIcns/share.svg" VerticalAlignment="Stretch" HorizontalAlignment="Right"  Panel.ZIndex="2" Height="74" Width="95"/>
             </Button>
+            <!--A frame to navigate between pages-->
             <Frame Panel.ZIndex="-1" Margin="195,25,8,0" Name="browseFrame" NavigationUIVisibility="Hidden"/>
             <Rectangle Fill="#8460c6" Panel.ZIndex="1" RadiusY="26.533" RadiusX="26.533" Margin="1005,0,0,596"/>
             <svgc:SvgViewbox Source="assets/coins.svg" Margin="1005,32,160,616" Panel.ZIndex="2"/>

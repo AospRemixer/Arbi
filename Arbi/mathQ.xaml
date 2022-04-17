@@ -9,6 +9,7 @@
         WindowStartupLocation="CenterScreen"
         Background="#3a2d58"
         Title="Maths" Height="450" Width="800">
+    <!--This window comes before the math levels-->
     <Grid Margin="-4">
         <Button BorderThickness="0" Height="200" Width="200" HorizontalAlignment="Left" Margin="33,110,0,110" Click="lvl1_click" Background="#8760c5">
             <Button.Resources>

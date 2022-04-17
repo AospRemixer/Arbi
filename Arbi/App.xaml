@@ -4,6 +4,7 @@
              xmlns:local="clr-namespace:Arbi"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
+        <!--Typo Font-->
         <FontFamily x:Key="Typo">pack://application:,,,/assets/fonts/typoGra.ttf #TypoGraphica</FontFamily>
     </Application.Resources>
 </Application>

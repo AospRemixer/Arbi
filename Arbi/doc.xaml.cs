@@ -20,6 +20,11 @@ namespace Arbi
     /// </summary>
     public partial class doc : Page
     {
+        /// <summary>
+        /// This page uses pdfs from the waterloo math contests for the Learn page.
+        /// This requires Adobe Acrobat Reader to run.
+        /// </summary>
+
         public doc()
         {
             InitializeComponent();

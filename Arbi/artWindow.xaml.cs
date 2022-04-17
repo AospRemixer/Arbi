@@ -22,6 +22,7 @@ namespace Arbi
     /// </summary>
     public partial class artWindow : Window
     {
+        // Variables used for this code!
         public static int fsM = 0;
         public static int erM = 0;
         public bool sendT = true;
@@ -55,11 +56,13 @@ namespace Arbi
             }
         }
 
+        // This tells that dont send messages when the art window is closed!
         private void windowClosing(object sender, System.ComponentModel.CancelEventArgs e)
         {
             sendT = false;
         }
 
+        // Full Screen Btn
         private void fullScrenBtn(object sender, RoutedEventArgs e)
         {
             fullScrnIcn.Source = new Uri("pack://application:,,,/assets/viewB/minm.svg");
@@ -77,12 +80,14 @@ namespace Arbi
             }
         }
 
+        // Checks if the text inputted is number only!
         private void NumberValidation(object sender, TextCompositionEventArgs e)
         {
             Regex regex = new Regex("[^0-9]+");
             e.Handled = regex.IsMatch(e.Text);
         }
 
+        // Below are buttons used in the window!
         private void applyBtn_Click(object sender, RoutedEventArgs e)
         {
             double newSize = Convert.ToDouble(brushSizeTxt.Text);

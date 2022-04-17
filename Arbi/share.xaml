@@ -7,7 +7,7 @@
       mc:Ignorable="d" 
       d:DesignHeight="695" d:DesignWidth="1077"
       Title="share">
-
+    <!--This is page for the share button-->
     <Grid>
         <Image Source="assets/imgs/arbiTweet.png" Panel.ZIndex="1" Margin="6,254,750.8,285.2"/>
         <Rectangle Fill="#8760c5" Panel.ZIndex="0" Margin="6,249,750.8,269.2" RadiusY="13.6" RadiusX="13.6"/>

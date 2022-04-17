@@ -9,6 +9,7 @@
         Background="#3a2d58"
         WindowStartupLocation="CenterScreen"
         Title="Workout" Height="720" Width="1280">
+    <!--This is the workout window; This one requires you to spend atleast 15 seconds per exercise!-->
     <Grid>
         <TextBlock Margin="1067,0,-0.4,0.4" TextAlignment="Center" Foreground="White" Text="Your Score" FontFamily="{StaticResource Typo}" FontSize="40" VerticalAlignment="Center"/>
         <TextBlock Margin="1067,357,-0.4,279.4" TextAlignment="Center" Foreground="White" Name="scoreNumTxt" Text="0" FontFamily="{StaticResource Typo}" FontSize="40" VerticalAlignment="Center"/>

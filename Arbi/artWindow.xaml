@@ -6,23 +6,28 @@
         xmlns:local="clr-namespace:Arbi"
         mc:Ignorable="d"
         xmlns:svgc="http://sharpvectors.codeplex.com/svgc/"
-        xmlns:notifications="clr-namespace:Notifications.Wpf.Controls;assembly=Notifications.Wpf"
         xmlns:colorpicker="clr-namespace:ColorPicker;assembly=ColorPicker"
         Background="#3a2d58"
         WindowStartupLocation="CenterScreen"
         Closing="windowClosing"
         ResizeMode="NoResize"
         Title="Arbi - Draw Mode" Height="720" Width="1280">
+    
+    <!--Everything is in a viewbox to allow for proper zoom-->
     <Viewbox Stretch="Uniform" StretchDirection="Both">
         <Grid>
+            <!--Color Picker-->
             <colorpicker:PortableColorPicker Background="#3a2d58" ColorChanged="clrChanged" Name="clrPicker" BorderThickness="6" BorderBrush="#8460c6" Width="60" Height="60" Margin="33,261,1199.8,393.4"/>
+            <!--The Ink Cavas-->
             <InkCanvas x:Name="mainBoard" HorizontalAlignment="Center" Panel.ZIndex="2" Width="1000" Height="700">
                 <InkCanvas.DefaultDrawingAttributes>
                     <DrawingAttributes
                     Width = "35" Height="35" />
                 </InkCanvas.DefaultDrawingAttributes>
             </InkCanvas>
+            <!--Rectangles for Design-->
             <Rectangle Fill="#8460c6" Margin="141,0,141,0.4"/>
+            <!--The Buttons-->
             <Button Margin="0,442,1165.8,146.4" Background="#3a2d58" BorderBrush="#8460c6" x:Name="undobtn" Click="undoBtn_Click" BorderThickness="6">
                 <Button.Resources>
                     <Style TargetType="{x:Type Border}">

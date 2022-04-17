@@ -20,6 +20,9 @@ namespace Arbi
     /// </summary>
     public partial class random : Page
     { 
+        /// <summary>
+        /// This code randomly decides what activity the random button will show!
+        /// </summary>
         public random()
         {
             InitializeComponent();
