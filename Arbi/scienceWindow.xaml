@@ -12,61 +12,6 @@
         Title="Science" Height="720" Width="1200">
     <!--This window uses a pdf reader to read notes and ask questions accordingly; its the science window-->
     <Grid>
-        <WebBrowser Margin="0,0,600,0.4" Source="https://www.easternct.edu/mathematical-sciences/_documents/Physical-Science-Tables-Formulas-and-Equations.pdf"/>
-        <TextBlock Text="0. Question..." Name="question" TextWrapping="Wrap" Foreground="White" FontFamily="Times New Roman" FontSize="50" Margin="616,32,-0.4,10.4"/>
-        <Button Background="#b98cff" BorderThickness="0" x:Name="btn2" Click="btn2_click" Panel.ZIndex="100" Margin="717,511,116.6,77.4">
-            <Button.Resources>
-                <Style TargetType="{x:Type Border}">
-                    <Setter Property="CornerRadius" Value="50"/>
-                </Style>
-            </Button.Resources>
-            <Button.Style>
-                <Style TargetType="{x:Type Button}">
-                    <Setter Property="Background" Value="White" />
-                    <Setter Property="Template">
-                        <Setter.Value>
-                            <ControlTemplate TargetType="{x:Type Button}">
-                                <Border x:Name="Border" Background="{TemplateBinding Background}">
-                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
-                                </Border>
-                                <ControlTemplate.Triggers>
-                                    <Trigger Property="IsMouseOver" Value="True">
-                                        <Setter Property="Background" Value="#2FADCC" TargetName="Border" />
-                                    </Trigger>
-                                </ControlTemplate.Triggers>
-                            </ControlTemplate>
-                        </Setter.Value>
-                    </Setter>
-                </Style>
-            </Button.Style>
-            <TextBlock Text="Error" Name="btn2_txt" Foreground="Black" FontFamily="Times New Roman" FontSize="45"/>
-        </Button>
-        <Button Background="#b98cff" Click="btn1_click" BorderThickness="0" x:Name="btn1" Panel.ZIndex="100" Margin="717,270,116.6,318.4">
-            <Button.Resources>
-                <Style TargetType="{x:Type Border}">
-                    <Setter Property="CornerRadius" Value="50"/>
-                </Style>
-            </Button.Resources>
-            <Button.Style>
-                <Style TargetType="{x:Type Button}">
-                    <Setter Property="Background" Value="White" />
-                    <Setter Property="Template">
-                        <Setter.Value>
-                            <ControlTemplate TargetType="{x:Type Button}">
-                                <Border x:Name="Border" Background="{TemplateBinding Background}">
-                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
-                                </Border>
-                                <ControlTemplate.Triggers>
-                                    <Trigger Property="IsMouseOver" Value="True">
-                                        <Setter Property="Background" Value="#2FADCC" TargetName="Border" />
-                                    </Trigger>
-                                </ControlTemplate.Triggers>
-                            </ControlTemplate>
-                        </Setter.Value>
-                    </Setter>
-                </Style>
-            </Button.Style>
-            <TextBlock Text="Error" Name="btn1_txt" Foreground="Black" FontFamily="Times New Roman" FontSize="45"/>
-        </Button>
+        <TextBlock Text="Please Download Arbi Full Verion to use this feature (Requires Adobe Acrobat Reader; Free version works fine too)" Foreground="White" FontFamily="Times New Roamn" FontSize="50" VerticalAlignment="Center" TextWrapping="Wrap" Margin="144,250,158.6,260.4"/>
     </Grid>
 </Window>

@@ -11,36 +11,6 @@
         Background="#3a2d58"
         Title="Learn" Height="720" Width="1280">
     <Grid>
-        <WebBrowser Margin="344,0,469.6,0.4" x:Name="q"/>
-        <WebBrowser Margin="804,0,-0.4,0.4" x:Name="a"/>
-        <Label Content="Learn" FontSize="80" Foreground="White"  FontFamily="{StaticResource Typo}" Panel.ZIndex="20" Margin="0,0,806.4,557.6"/>
-        <Rectangle Fill="White" Margin="0,96,1019.6,576.4" Panel.ZIndex="49"/>
-        <Button Background="#b98cff" ToolTipService.ShowDuration="3000" ToolTipService.ToolTip="Next" BorderThickness="0" x:Name="nextBtn" Click="nextBtn_Click" Panel.ZIndex="100" Margin="21,518,954.6,45.4">
-            <Button.Resources>
-                <Style TargetType="{x:Type Border}">
-                    <Setter Property="CornerRadius" Value="50"/>
-                </Style>
-            </Button.Resources>
-            <Button.Style>
-                <Style TargetType="{x:Type Button}">
-                    <Setter Property="Background" Value="White" />
-                    <Setter Property="Template">
-                        <Setter.Value>
-                            <ControlTemplate TargetType="{x:Type Button}">
-                                <Border x:Name="Border" Background="{TemplateBinding Background}">
-                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
-                                </Border>
-                                <ControlTemplate.Triggers>
-                                    <Trigger Property="IsMouseOver" Value="True">
-                                        <Setter Property="Background" Value="#2FADCC" TargetName="Border" />
-                                    </Trigger>
-                                </ControlTemplate.Triggers>
-                            </ControlTemplate>
-                        </Setter.Value>
-                    </Setter>
-                </Style>
-            </Button.Style>
-            <svgc:SvgViewbox Source="assets/nextBtnIcon.svg" x:Name="svgNextBtn" Height="101" Width="129"/>
-        </Button>
+        <TextBlock Text="Please Download Arbi Full Verion to use this feature (Requires Adobe Acrobat Reader; Free version works fine too)" Foreground="White" FontFamily="Times New Roamn" FontSize="50" VerticalAlignment="Center" TextWrapping="Wrap" Margin="144,250,238.6,260.4"/>
     </Grid>
 </Window>

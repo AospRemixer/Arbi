@@ -47,7 +47,7 @@ namespace Arbi
             }
             else
             {
-                string token = // I have to hide the webhook of the Discord Bot; just like How I have to hide to discord bot token. The app itself has the webhook installed with it;
+                string token = "";
 
                 WebRequest wr = (HttpWebRequest)WebRequest.Create(token);
 
@@ -90,7 +90,7 @@ namespace Arbi
         // You can view the server to see if its safe! No Text channels to talk in... for safety!SSS
         private void joinDiscord_click(object sender, RoutedEventArgs e)
         {
-            System.Diagnostics.Process.Start(@"https://discord.gg/FjVMakcGN5");
+            System.Diagnostics.Process.Start(@"https://discord.gg/nGdynfQWBU");
         }
     }
 }
