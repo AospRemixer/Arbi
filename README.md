@@ -28,7 +28,7 @@ There are 2 versions of Arbi.
 ![ErrorDownload](https://user-images.githubusercontent.com/67806882/163738498-4f4f77a8-ead3-4e5f-bff0-86c24adb70a2.png)
 
 ### Step 3. 
-* Extract all the files from the .zip file you download. You can use Zzip, or the windows default extractor.
+* Extract all the files from the .zip file you just downloaded. You can use 7-zip, or the windows default extractor.
 
 ### Step 4. 
 * Locate setup.exe, and run the setup file. Finish the setup (which only takes 10 seconds at max).
@@ -64,7 +64,7 @@ Incase this doesn't work for you, just uninstall Arbi in anyway you would uninst
 # Share Feature
 Progress isn't fun until you can share your progress. In arbi you can easily share your progress on twitter or discord! 
 * Twitter Button... The twitter button allows you to share your progress on twitter; it will automatically open up a window on your browser with some basic text that is arbi oriented, and includes your arbi points!
-* Discord Button... To view the features of this button you will have to join [this discord server](https://discord.gg/FjVMakcGN5) (the Official Arbi Score Board Server). Incase your wondering if its safe to join, well yes, the server has no text channels to talk in for safety purposes, and only scores! Arbi uses discord webhook technology to send send your arbi scores onto discord! This can be uses to prove your arbi score.
+* Discord Button... To view the features of this button you will have to join [this discord server](https://discord.gg/nGdynfQWBU) (The Official Arbi Score Board Server). Incase your wondering if its safe to join, well yes, the server has no text channels to talk in for safety purposes, and only scores! Arbi uses discord webhook technology to send send your arbi scores onto discord! This can be used to prove your arbi score.
 
 
 # 
